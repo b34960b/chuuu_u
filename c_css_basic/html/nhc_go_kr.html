@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/reset_test.css">
     <link rel="stylesheet" href="../font/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../css/nhc_go_kr.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet">
     
     <!-- [if IE]>
      <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
@@ -111,8 +112,49 @@
       <div class="content">
         <div class="center_info">
           <h4 class="hidden">공지사항 안내 및 확인사항</h4>
-          <div class="info_board_01">공지사항</div>
+
+
+        <!-- ************************************ -->
+          <div class="info_board_01">
+            <h5 class="action">공지사항</h5>
+            <div class="info_01_con con_01 action">
+              <ul>
+                <li>
+                  <p>2019-5<br /><span class="big">16</span></p>
+                  <dl>
+                    <dt>[제목]</dt>
+                    <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati alias dolorum doloremque aspernatur. Ut voluptates cumque est, quaerat doloribus cupiditate ipsum eveniet obcaecati soluta fuga, ab, illo ea mollitia totam </dd>
+                  </dl>
+                </li>
+                <li>
+                  <p>2019-5<br /><span class="big">17</span></p>
+                  <dl>
+                    <dt>[제목]</dt>
+                    <dd>Lorem ipsum dolor sit amet conadipisicing elit. Maxime cumque numqueum eligendi natus cum
+                    consectetur. Dolorum quo natus voexercitationem accusamuspraesentiumobcaecati adipisci, eius
+                    earum inventore?</dd>
+                    </dl>
+                <li>
+                  <p>2019-5<br /><span class="big">18</span></p>
+                  <dl>
+                    <dt>[제목]</dt>
+                    <dd>Lorem ipsum dolor sit amet conadipisicing elit. Maxime cumque numqueum eligendi natus cum
+                    consectetur. Dolorum quo natus voexercitationem accusamuspraesentiumobcaecati adipisci, eius
+                    earum inventore?</dd>
+                    </dl>
+                </li>
+              </ul>
+            </div>
+
+
+            <!-- ******************************** -->
+            <h5>보도자료</h5>
+            <div class="info_01_con con_02 ">보도자료 내용</div>
+          </div>
           
+        <!-- ************************************ -->
+
+
           <div class="info_board_02">
             <div class="title_zone">
               <h5>퀵링크</h5>
@@ -130,8 +172,26 @@
             <div class="content_zone"></div>
           </div>
         </div>
-        <div class="program_guide">
+        
+        <div class="program_guide float_btn">
           <h4 class="hidden">프로그램 안내 서비스</h4>
+          <ul>
+            <li><a href="#">
+              <div class="icon">
+                <i class="fas fa-users" aria-hidden="true"></i>
+              
+              </div>
+              <dl>
+              <dt>단체관람 예약</dt>
+              <dd>관람인원이 10인 이상인경우 <br /> 
+              단체관람 예약을 운영하고 있습니다.</dd>
+              </dl>
+              </a></li>
+           
+            <li><a href="#"><span class="hidden"></span></a></li>
+            <li><a href="#"><span class="hidden"></span></a></li>
+            <li><a href="#"><span class="hidden"></span></a></li>
+          </ul>
         </div>
 
       </div>
@@ -197,6 +257,18 @@
 </div>
 
   <!-- script ===============================-->
-  <script></script>
+  <script>
+    (function($){
+      var ib_01 = $('.info_board_01');
+      var ibTitle = ib_01.children('h5');
+      var ib_con = $('.info_01_con');
+
+      ibTitle.on('click',function(e){
+        e.prevenDefault();
+        var i = $(this).addClass('action')
+
+      })
+    }
+  </script>
 </body>
 </html>
