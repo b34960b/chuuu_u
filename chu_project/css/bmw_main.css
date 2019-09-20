@@ -1,0 +1,47 @@
+@charset "UFT-8";
+
+#wrap{width:1900px; height:auto; background-color:#333;}
+
+/* layout ================================================================== */
+
+/* headBox ================================================================= */
+#headBox{position:relative; width:100%; height:80px; background-color:#fff;}
+  .gnb{position:absolute; width:778px; height:26px; background-color:#444; }
+  .gnb>ul{width:100%; height:100%;}
+  .gnb>ul>li{float:left; margin-right:66px; height:100%;}
+  .gnb>ul>li:last-child{margin-right:0;}
+  
+  .gnb>ul>li:nth-child(1){width:190px; background-color:#777;}
+  .gnb>ul>li:nth-child(2){width:135px; background-color:#777;}
+  .gnb>ul>li:nth-child(3){width:165px; background-color:#777;}
+  .gnb>ul>li:nth-child(4){width:90px; background-color:#777;}
+
+/* conBox ================================================================== */
+#conBox{width:100%; height:auto;}
+.view_area{width:100%; height:900px; background-color:#080}
+.view_area>p{}
+
+/* .motion_area{width:100%; height:300px; background:#3f0}; */
+
+.content_area{padding-top:250px; width:100%; height:1559px; box-sizing:border-box; background-color:#333}
+  .innovation{margin-left:119px; width:1102px; height:810px;}
+  .innovation>ul>li{float:left; width:520px; height:810px;margin-right:51px; background-color: #fff;}
+.innovation>ul>li:last-child{margin-right:0;}
+
+
+
+
+
+.media_area{padding-bottom:100px; box-sizing:border-box; width:100%; height:auto; background-color:#880}
+.img{position:relative; z-index:200; margin:auto; width:1236px; height:656px; background-color:#f999}
+.video{position:relative; top:-200px; margin:auto; width:1664px; height:1100px; background-color:#fff;}
+
+
+.story_area{width:100%; height:1260px; padding-top:256px; box-sizing:border-box; background-color:#800}
+  .bmw_story{margin-left:119px; width:1662px; height:534px;}
+  .bmw_story>ul>li{float:left; width:815px; height:534px; margin-right:32px; background-color:#fff;}
+  .bmw_story>ul>li:last-child{margin-right:0;}
+
+
+/* footBox ================================================================= */
+#footBox{width:100%; height:554px; background-color:#000}
