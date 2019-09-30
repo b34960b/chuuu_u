@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* 
+*pc: 769~960px
+*tablet: 481~768px
+*mob: ~480px
+*/
+
+#wrap{width:100%; max-width:60rem; height:auto; background-color:#ccc;}
+#headBox{width:100%; height:9.375rem; height:150px; background-color:#aff;}
+h1{width:6.25rem; height:9.375rem; background-color: #8f8;}
+
+#contentBox{width:100%; height:auto;}
+#viewBox{width:6.25rem; height:28.125rem; background-color:#fdd;}
+#listBox{width:6.25rem; height:37.5rem; background-color:#765;}
+#infoBox{display:none; width:300px; height:300px; background-color: #351;}
+
+#footBox{width:100%; height:6.25rem; background-color:#aaa;}
+h2{width:6.25rem; height:100%; background-color: #03f; transition:all 200ms ease;}
+
+
+/* ============================================================== */
+@media screen and (min-width:480px) and (max-width:768px) {
+  #contentBox{height:auto;}
+  #viewBox{height:18.75rem;}
+  #listBox{height:25rem;}
+  #infoBox{display:block;}
+}
+
+@media screen and (max-width:480px) {
+  #headBox{height:6.25rem;}
+  h1{width:100px; height:100px;}
+  #contentBox{height:auto;}
+    #viewBox{height:25rem;}
+    #listBox{height:25rem;}
+    #infoBox{display:block;}
+    #footBox{width:50%; min-width:9.378rem; margin:auto;}
+}
+
+/* 
+nth: 
+nth-child: 처음부터 연속되어진 동일한 성격(type, class)일 경우에도 사용가능
+nth-of-type: 형제 중에 중간에 다른 요소가 섞여있어도 동일한 요소일떄는 순서로 인지하여 사용가능
+*/
+
+/* :nth-child() {}
+   :first-child() {}
+   :last-child() {}
+   :nth-last-child() {}  => 뒤에서부터 역순으로
+*/
+
+/* :nth-of-child() {}
+   :first-of-child() {}
+   :last-of-child() {}
+   :nth-of-last-child() {}  => 뒤에서부터 역순으로 동일요소
+*/
+
+/* 
+   * {}
+   div, a, p{}
+   .box{}
+   #box{}
+   ul a{}
+   ul > li{}
+   dt + dd{}
+   dt ~ dd{}
+*/

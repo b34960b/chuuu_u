@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#wrap{width:60rem; height:81.25rem;}
+
+#headBox{width:60rem; height:9.375rem; background-color:#fac;}
+.left_box_01{width:6.25rem; height:9.375rem; background-color:#faf;}
+
+#contentBox{width:60rem; height:65.625rem;}
+.view_box{width:60rem; height:28.125rem; background-color:#afa}
+.box_01{float:left; width:15rem; height:37.5rem; background-color:#ccc;}
+.box_02{float:left; width:15rem; height:37.5rem; background-color:#aac;}
+.box_03{float:left; width:15rem; height:37.5rem; background-color:#ccc;}
+.box_04{float:left; width:15rem; height:37.5rem; background-color:#aac;}
+
+#footBox{width:60rem; height:6.25rem; background-color:#a30;}
+.left_box_02{width:6.25rem; height:6.255rem; background-color:#faf;}
+
+
+@media screen and (max-width:48rem) {
+  #wrap{width:48%; height:100%; background-color: #fcc;}
+}
+
